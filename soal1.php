@@ -98,7 +98,7 @@ if (isset($_POST["second_form"])) {
                     <tr>
                         <?php foreach($columns as $column) { ?>
                             <td>
-                                <label for="<?php echo 'number_'.$row.'_'.$column ?>"><?php echo $row.'.'.$column ?></label>
+                                <label for="<?php echo 'number_'.$row.'_'.$column ?>"><?php echo "$row.$column" ?></label>
                                 <input type="text" name="<?php echo "number[$row][$column]" ?>">
                             </td>
                         <?php } ?>
@@ -119,7 +119,7 @@ if (isset($_POST["second_form"])) {
                 <tr class="tr">
                     <?php foreach($row as $columnKey => $column) { ?>
                         <td class="td">
-                            <?php echo $rowKey.".".$columnKey. ":" . $column ?>
+                            <?php echo "$rowKey.$columnKey : $column" ?>
                         </td>
                     <?php } ?>
                 </tr>
